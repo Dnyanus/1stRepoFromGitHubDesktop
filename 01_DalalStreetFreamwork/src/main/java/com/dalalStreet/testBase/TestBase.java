@@ -14,6 +14,9 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
+
+import com.dalalStreet.pageLayer.A_RegisterUpPage;
+import com.dalalStreet.pageLayer.B_LoginPage;
 import com.dalalStreet.utilities.ReadConfig;
 import com.dalalStreet.utilities.UtilClass;
 
@@ -24,6 +27,8 @@ public class TestBase {
 	public static WebDriver driver;
 	public static Logger logger;
 	public UtilClass util_obj;
+	public A_RegisterUpPage registerUpPage_Obj;
+	public B_LoginPage login_obj;
 	
 	
 //---------------------------------------------------------------
@@ -82,7 +87,9 @@ public class TestBase {
 		
 	//------------------ Object Creation---------------------------
 		
-		
+		registerUpPage_Obj = new A_RegisterUpPage(driver);
+		login_obj = new B_LoginPage(driver);
+		util_obj = new UtilClass();
 	//------------------ login steps ------------------------
 
 		Thread.sleep(5000);
