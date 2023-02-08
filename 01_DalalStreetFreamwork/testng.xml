@@ -11,7 +11,7 @@
 		
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.dalalStreet.testLayer.A_RegisterUpPageTest"/>
+     	<class name="com.dalalStreet.testLayer.B1_LoginPageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
