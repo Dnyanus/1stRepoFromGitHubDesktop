@@ -12,7 +12,7 @@ public class A_RegisterUpPage {
 	{
 		PageFactory.initElements(driver,this);
 	}	
-//-------------- obj repo -----------------
+//-------------- object repo -----------------
 	
 	@FindBy (xpath ="//input[@name='firstName']")
 	private WebElement firstname_txtbox;

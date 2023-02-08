@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author Dnyaneshwar
- *
- */
-module d {
-}
