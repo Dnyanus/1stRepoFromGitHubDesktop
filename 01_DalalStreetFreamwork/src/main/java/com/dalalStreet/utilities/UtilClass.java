@@ -47,7 +47,7 @@ public class UtilClass extends TestBase{
 
 	public static void takeSS(String filename)
 	{
-		String path = "C:\\Users\\Dnyaneshwar\\eclipse-workspace\\0001_DalalStreetFreamwork\\screenshots\\";
+		String path = System.getProperty("user.dir")+"\\screenshots";
 		
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);

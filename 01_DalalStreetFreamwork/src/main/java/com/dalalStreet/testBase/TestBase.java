@@ -17,6 +17,7 @@ import org.testng.annotations.Parameters;
 
 import com.dalalStreet.pageLayer.A_RegisterUpPage;
 import com.dalalStreet.pageLayer.B_LoginPage;
+import com.dalalStreet.utilities.ExcelHandling;
 import com.dalalStreet.utilities.ReadConfig;
 import com.dalalStreet.utilities.UtilClass;
 
@@ -27,6 +28,8 @@ public class TestBase {
 	public static WebDriver driver;
 	public static Logger logger;
 	public UtilClass util_obj;
+	public ExcelHandling excel_data;
+	
 	public A_RegisterUpPage registerUpPage_Obj;
 	public B_LoginPage login_obj;
 	
@@ -90,16 +93,20 @@ public class TestBase {
 		registerUpPage_Obj = new A_RegisterUpPage(driver);
 		login_obj = new B_LoginPage(driver);
 		util_obj = new UtilClass();
+		excel_data = new ExcelHandling();
 	//------------------ login steps ------------------------
 
-		Thread.sleep(5000);
+		login_obj.enterEmailAddress(read_config.getEmailAddress());
+		login_obj.enterPassword(read_config.getPassword());
+		login_obj.clickOnLoginButton();
+//		Thread.sleep(2000);
 		logger.info("Login the application");
 	}
 	
 	@AfterMethod
 	public void tearDown() throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		driver.quit();
 	}
 }

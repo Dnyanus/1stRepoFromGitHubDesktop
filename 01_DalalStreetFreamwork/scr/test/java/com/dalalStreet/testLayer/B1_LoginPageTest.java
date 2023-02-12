@@ -14,11 +14,11 @@ public class B1_LoginPageTest extends TestBase {
 	{
 		String expected_output = "https://www.apps.dalalstreet.ai/dashboard";
 		
-//		login_obj.enterEmailAddress("dnyanu197@gmail.com");
-//		login_obj.enterPassword("@Test@1234");
-//		login_obj.clickOnLoginButton();
-		
-		Thread.sleep(5000);		
+//		login_obj.enterEmailAddress(excel_data.readData("LOgin",4, 1));
+//		login_obj.enterPassword(excel_data.readData("Login", 4, 2));
+//		login_obj.clickOnLoginButton();		
+	
+		Thread.sleep(3000);	
 		Assert.assertEquals(util_obj.getWebPageUrl(), expected_output);
 		logger.info("Login done successfully");
 	}

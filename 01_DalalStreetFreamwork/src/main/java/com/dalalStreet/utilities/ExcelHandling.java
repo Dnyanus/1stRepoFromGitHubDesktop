@@ -2,23 +2,39 @@ package com.dalalStreet.utilities;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelHandling 
 {
-	String path = "C:\\Users\\Dnyaneshwar\\eclipse-workspace\\0001_DalalStreetFreamwork\\src\\test\\resource\\TestData\\DalalStreetTestData.xlsx";
+	String path = System.getProperty("user.dir")+"\\src\\resource\\java\\TestData\\DalalStreetTestData.xlsx";
 	File file;
 	FileInputStream fis;
+	FileOutputStream fos;
 	XSSFWorkbook wb;
+	XSSFRow row;
 	XSSFCell cell;
 	String data;
 	XSSFSheet sheet;
 	
-// DataFormatter class used to get all types of data(Sting, numeric, date) 
+//==================================================================================
+//	public static void main(String[] args) 
+//	{
+//		ExcelHandling obj = new ExcelHandling();
+//		System.out.println(obj.readData("Login", 4, 1));
+//		System.out.println(obj.getRowNumber("Login"));
+//		System.out.println(obj.getCellNumber("Login", 1));
+//		obj.writeData("Login", 4, 3, "DONEEEEE");
+//	}
 	
+//==================================================================================
+	
+// DataFormatter class used to get all types of data(Sting, numeric, date) 	
 	public String readData(String sheet_name, int row_index, int cell_index)
 	{
 		try
@@ -78,4 +94,31 @@ public class ExcelHandling
 		return total_cell;
 	}
 //====================================================================================
+
+//Write Data in Excel Sheet ==> ressult in the form of Passed And Failed 
+
+	public void writeData(String sheet_name, int row_index, int cell_index, String status)
+	{
+		try
+		{
+			file = new File(path);
+			fis = new FileInputStream(file);
+			wb = new XSSFWorkbook(fis);
+			row = wb.getSheet(sheet_name).getRow(row_index); 
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		row.createCell(cell_index).setCellValue(status);
+		try 
+		{
+			fos = new FileOutputStream(file);
+			wb.write(fos);
+		}
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+		}	
+	}
 }

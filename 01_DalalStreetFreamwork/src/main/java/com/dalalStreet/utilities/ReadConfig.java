@@ -11,7 +11,8 @@ public class ReadConfig {
 	
 	public ReadConfig()
 	{
-		String path = "C:\\Users\\Dnyaneshwar\\eclipse-workspace\\0001_DalalStreetFreamwork\\src\\test\\resource\\config\\config.properties";		
+		String path = System.getProperty("user.dir")+"\\src\\resource\\java\\config\\config.properties";	
+		
 		try 
 		{
 			File file = new File(path);

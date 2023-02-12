@@ -11,14 +11,10 @@
 	
   <test thread-count="5" name="Test">
     <classes>
-		
-      <class name="com.dalalStreet.testLayer.B1_LoginPageTest"/>
+							
+<!-- =====Register ran karte time test base me login ke details hide karne hai ===== -->
+      <class name="testCaseWithMultipleData.LoginPageTest"/>
       
-      
-  <!-- =====Register ran karte time  test base me login ke details hide karne hai ===== -->
-  <!--    <class name="com.dalalStreet.testLayer.A_RegisterUpPageTest"/>
-      
-    --> 
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
