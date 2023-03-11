@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-13T01:51:36 IST" name="Suite" finished-at="2023-02-13T01:51:45 IST" duration-ms="9752">
+  <suite started-at="2023-03-11T18:57:56 IST" name="Suite" finished-at="2023-03-11T18:58:24 IST" duration-ms="27792">
     <groups>
     </groups>
-    <test started-at="2023-02-13T01:51:36 IST" name="Test" finished-at="2023-02-13T01:51:45 IST" duration-ms="9752">
+    <test started-at="2023-03-11T18:57:56 IST" name="Test" finished-at="2023-03-11T18:58:24 IST" duration-ms="27792">
       <class name="com.dalalStreet.testLayer.B1_LoginPageTest">
-        <test-method is-config="true" signature="start()[pri:0, instance:com.dalalStreet.testLayer.B1_LoginPageTest@40ef3420]" started-at="2023-02-13T01:51:36 IST" name="start" finished-at="2023-02-13T01:51:36 IST" duration-ms="149" status="PASS">
+        <test-method is-config="true" signature="start()[pri:0, instance:com.dalalStreet.testLayer.B1_LoginPageTest@6eda5c9]" started-at="2023-03-11T18:57:56 IST" name="start" finished-at="2023-03-11T18:57:56 IST" duration-ms="144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.dalalStreet.testLayer.B1_LoginPageTest@40ef3420]" started-at="2023-02-13T01:51:36 IST" name="setUp" finished-at="2023-02-13T01:51:41 IST" duration-ms="5209" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.dalalStreet.testLayer.B1_LoginPageTest@6eda5c9]" started-at="2023-03-11T18:57:56 IST" name="setUp" finished-at="2023-03-11T18:58:19 IST" duration-ms="22673" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,15 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginWithCorrectCred()[pri:0, instance:com.dalalStreet.testLayer.B1_LoginPageTest@40ef3420]" started-at="2023-02-13T01:51:41 IST" name="verifyLoginWithCorrectCred" finished-at="2023-02-13T01:51:44 IST" duration-ms="3025" status="PASS">
+        <test-method signature="verifyLoginWithCorrectCred()[pri:0, instance:com.dalalStreet.testLayer.B1_LoginPageTest@6eda5c9]" started-at="2023-03-11T18:58:19 IST" name="verifyLoginWithCorrectCred" finished-at="2023-03-11T18:58:22 IST" duration-ms="3021" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithCorrectCred -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dalalStreet.testLayer.B1_LoginPageTest@40ef3420]" started-at="2023-02-13T01:51:44 IST" name="tearDown" finished-at="2023-02-13T01:51:45 IST" duration-ms="1318" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dalalStreet.testLayer.B1_LoginPageTest@6eda5c9]" started-at="2023-03-11T18:58:22 IST" name="tearDown" finished-at="2023-03-11T18:58:24 IST" duration-ms="1897" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="end()[pri:0, instance:com.dalalStreet.testLayer.B1_LoginPageTest@40ef3420]" started-at="2023-02-13T01:51:45 IST" name="end" finished-at="2023-02-13T01:51:45 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="end()[pri:0, instance:com.dalalStreet.testLayer.B1_LoginPageTest@6eda5c9]" started-at="2023-03-11T18:58:24 IST" name="end" finished-at="2023-03-11T18:58:24 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
