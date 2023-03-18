@@ -78,4 +78,9 @@ public class C_DashboardPage {
 	{
 		power_off_btn.click();
 	}
+	
+	public void clickOn()
+	{
+//		power_off_btn.click();
+	}
 }
