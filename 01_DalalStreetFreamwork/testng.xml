@@ -13,6 +13,7 @@
     <classes>
 		
       <class name="com.dalalStreet.testLayer.B1_LoginPageTest"/>
+      <class name="com.dalalStreet.testLayer.B2_LogoutFunctionalityTest"/>
       
       
   <!-- =====Register ran karte time  test base me login ke details hide karne hai ===== -->

@@ -17,6 +17,7 @@ import org.testng.annotations.Parameters;
 
 import com.dalalStreet.pageLayer.A_RegisterUpPage;
 import com.dalalStreet.pageLayer.B_LoginPage;
+import com.dalalStreet.pageLayer.C_DashboardPage;
 import com.dalalStreet.utilities.ExcelHandling;
 import com.dalalStreet.utilities.ReadConfig;
 import com.dalalStreet.utilities.UtilClass;
@@ -32,6 +33,7 @@ public class TestBase {
 	
 	public A_RegisterUpPage registerUpPage_Obj;
 	public B_LoginPage login_obj;
+	public C_DashboardPage dashboard_page_obj;
 	
 	
 //---------------------------------------------------------------
@@ -93,6 +95,7 @@ public class TestBase {
 		registerUpPage_Obj = new A_RegisterUpPage(driver);
 		login_obj = new B_LoginPage(driver);
 		util_obj = new UtilClass();
+		dashboard_page_obj = new C_DashboardPage(driver);
 		excel_data = new ExcelHandling();
 	//------------------ login steps ------------------------
 
