@@ -6,8 +6,8 @@
       <class name="com.dalalStreet.testLayer.B1_LoginPageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="verifyLoginWithCorrectCred"/>
           <include name="setUp"/>
+          <include name="verifyLoginWithCorrectCred"/>
           <include name="start"/>
           <include name="end"/>
         </methods>
