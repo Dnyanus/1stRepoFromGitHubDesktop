@@ -15,7 +15,8 @@
       <class name="testCaseWithMultipleData.LoginPageTest"/>
       <class name="com.dalalStreet.testLayer.B1_LoginPageTest"/>
       <class name="com.dalalStreet.testLayer.A_RegisterUpPageTest"/>
-      <class name="com.dalalStreet.testBase.TestBase"/>
+      
+      <class name="com.dalalStreet.testLayer.G_SellStockWithIntraDayMarketPriceTest"/>   
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
